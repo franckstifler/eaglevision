@@ -3,23 +3,24 @@ body {
   background-color: #FAFAFA;
   font: 16px "Oswald", Helvetica, Arial, sans-serif; }
 
+/*Navigation*/
 .navbar-default {
   background-color: #373737;
   border-color: #373737;
   border-radius: 0; }
 
-.nav li {
-  margin-top: 45px; }
+.navbar-default .navbar-nav li {
+  margin-top: 0px; }
+  .navbar-default .navbar-nav li a:hover {
+    color: #E91C63; }
+  .navbar-default .navbar-nav li a:active {
+    color: #E91C63; }
 
 div.ligne {
   border: 2px solid #8BC349;
+  background-color: #8BC349;
   position: relative;
   top: -20px; }
-
-.carousel-caption a {
-  position: relative;
-  left: 100px;
-  top: 50px; }
 
 /*slider */
 #slider {
@@ -31,11 +32,16 @@ div.ligne {
 
 .carousel-caption {
   top: 200px; }
+  .carousel-caption a {
+    position: relative;
+    left: 100px;
+    top: 50px; }
   .carousel-caption i {
     color: #8BC349;
     padding: 0 50px; }
   .carousel-caption h1 {
-    letter-spacing: 1px; }
+    border-radius: 20px;
+    background: linear-gradient(135deg, #E91C63, #8BC349); }
 
 .firstCarousel {
   padding: 400px 0; }
@@ -56,13 +62,13 @@ div.ligne {
   top: 20px; }
 
 #informatique {
-  background-color: rgba(233, 28, 99, 0.1);
+  background: linear-gradient(#FAFAFA, rgba(159, 145, 145, 0.3));
   position: relative;
   top: -40px;
   padding: 15px 5px 20px 5px; }
 
 #electronique {
-  background-color: #FAFAFA;
+  background: linear-gradient(#9f9191, #FAFAFA);
   position: relative;
   top: -40px;
   padding: 15px 5px 20px 5px;
@@ -70,9 +76,16 @@ div.ligne {
 
 h2.title {
   color: #8BC349;
+  height: 40px;
+  background: linear-gradient(45deg, #E91C63, #8BC349);
+  border-radius: 0 80px 0;
   text-align: center;
   font-weight: 600;
-  letter-spacing: 3px; }
+  letter-spacing: 2x;
+  text-shadow: 5; }
+
+div i.fa {
+  font-size: 25px; }
 
 .talk {
   text-align: left;
@@ -91,10 +104,10 @@ img {
 .footer {
   background-color: #222;
   text-align: center;
-  min-width: 100%;
+  max-width: 100%;
   color: #9f9191;
   font-weight: bold;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.3px; }
 
 h4.title {
   color: #8BC349;
@@ -107,7 +120,53 @@ div.talk {
 .social-media {
   padding: 10px 0 0 0; }
   .social-media a {
-    padding: 0px 40px;
+    padding: 0px 35px;
     color: #9f9191; }
   .social-media a:hover {
     color: #E91C63; }
+
+p.logo {
+  margin-top: 10px;
+  font-size: 10px; }
+
+/* CONTACT PAGE */
+.map {
+  position: relative;
+  top: -20px; }
+
+.page-body {
+  max-width: 100%;
+  padding: 20px 0 40px 0; }
+  .page-body .col-md-4 {
+    padding: 10px 0 10px 0; }
+  .page-body h2 {
+    color: #E91C63; }
+
+/*MEDIA QUERIES */
+@media (max-width: 412px) {
+  .carousel-caption {
+    top: 50px; }
+    .carousel-caption a {
+      position: relative;
+      top: 20px;
+      left: 5px; }
+    .carousel-caption i {
+      color: #8BC349;
+      padding: 50px 20px; }
+    .carousel-caption h2.fix {
+      font-size: 24px; }
+  .firstCarousel {
+    padding: 300px 0; }
+  .social-media a {
+    padding: 0px 20px;
+    color: #9f9191; } }
+
+@media (min-width: 992px) {
+  h2.title {
+    position: relative;
+    top: 170px; } }
+
+@media (max-width: 992px) {
+  .row div {
+    padding: 5px 0;
+    margin-left: 15px; } }

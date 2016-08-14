@@ -1,41 +1,7 @@
 extends layout
 
 block content
- .navbar.navbar-default
-   .container
-    .navbar-header
-      button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#collapse", aria-expanded="false")
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href="#") EAGLEVISION
-    .collapse.navbar-collapse(id="collapse")
-      ul.nav.navbar-nav.navbar-right
-        li.active
-          a(href="#") Acceuil
-        li.dropdown
-          a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") PRODUITS
-            span.caret
-          ul.dropdown-menu
-            li
-              a(href="#") Téléphones
-            li
-              a(href="#") Tablettes
-            li
-              a(href="#") Ordinateurs portables
-        li.dropdown
-          a.dropdown-toggle(href="#", data-toggle="dropdown", role="button") SERVICES
-            span.caret
-          ul.dropdown-menu
-            li
-              a(href="#") Formation
-            li
-              a(href="#") Maintenance
-            li
-              a(href="#") Conseils
-        li
-          a(href="#") Contacts
+  include ./navigation.jade
   div.ligne
     span
   section#slider.text-center
@@ -62,24 +28,30 @@ block content
           .item.firstCarousel
             .carousel-caption
               h1 EAGLEVISION
-              h2 Nous sommes constitués d'une équipe de professionnels dans l'audio-visuel, l'électronique, et en informatique, qui vous offrent une formation adaptée aux exigences de la societé...
+              h2.fix Nous sommes constitués d'une équipe de professionnels dans l'audio-visuel, l'électronique, et en informatique, qui vous offrent une formation adaptée aux exigences de la societé...
               a(href="#electronique")
                 button(type="button").btn.btn-lg.btn-success En savoir plus
   section.content
     .row#informatique
       .col-md-2
-        h2.title Informatique
-      .col-md-6.services
+        h2.title.wow.bounceInRight Informatique
+      .col-md-6
         .row
-          span.talk.fa.fa-chevron-right &nbsp Vente des difféents matériels informatiques: téléphones, tablettes, ordinateurs portable... 
-          br
-          br
-        .row
-          span.talk.fa.fa-chevron-right&nbsp Nous réparons votre matériel informatique, tout en prévoyant les pannes ultérieures, car vous comptez pour nous. Grâce à notre laboratoire bien équipé nous vous offrons des services de qualité. 
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Vente des difféents matériels informatiques: téléphones, tablettes, ordinateurs portable... 
           br
           br
         .row
-          span.talk.fa.fa-chevron-right&nbsp Nous formons en divers domaines informatiques tels que la Bureautique, l'Infographie, les réseaux, l'audiovisuel et la programmation... Grâce a nos experts qui vous offrent une formation adaptée aux exigences de la société.
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Nous réparons votre matériel informatique, tout en prévoyant les pannes ultérieures, car vous comptez pour nous. Grâce à notre laboratoire bien équipé nous vous offrons des services de qualité. 
+          br
+          br
+        .row
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Nous formons en divers domaines informatiques tels que la Bureautique, l'Infographie, les réseaux, l'audiovisuel et la programmation... Grâce a nos experts qui vous offrent une formation adaptée aux exigences de la société.
       .col-md-4
         #pub.carousel.slide(data-ride="carousel")
           //carousel items
@@ -97,21 +69,27 @@ block content
           a.right.carousel-control(href="#pub" role="button" data-slide="next")
             span.icon-next(aria-hidden="true")
             span.sr-only Next
-
+    div.ligne2
     .row#electronique
       .col-md-2
-        h2.title Electronique
-      .col-md-6.services
+        h2.title.wow.bounceInUp Electronique
+      .col-md-6
         .row
-          span.talk.fa.fa-chevron-right&nbsp Nous diposons d'une large gamme de matériels électronique: écrans plasma, tous les lecteurs DVD, CD, fer à repasser, radio...  
-          br
-          br
-        .row
-          span.talk.fa.fa-chevron-right&nbsp Nous reparons votre matériel életronique tels que vos écrans plasma, lecteurs DVD... 
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Nous diposons d'une large gamme de matériels électronique: écrans plasma, tous les lecteurs DVD, CD, fer à repasser, radio...  
           br
           br
         .row
-          span.talk.fa.fa-chevron-right&nbsp Nous formons en maintenance, réparation du materiel electronique: telephones portables, televiseurs... Grâce à notre laboratoire bien équipé nous vous offrons des services de qualité.
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Nous réparons votre matériel életronique tels que vos écrans plasma, lecteurs DVD fer à repasser... Nous prenons soin de vos donner également les précautions pour les entretenir.
+          br
+          br
+        .row
+          div
+            i.fa.fa-chevron-right.wow.rotateIn
+            span.talk Nous formons en maintenance, réparation du materiel electronique: telephones portables, televiseurs... Grâce à notre laboratoire bien équipé nous vous offrons des services de qualité.
       .col-md-4
         #pub2.carousel.slide(data-ride="carousel")
           //carousel items

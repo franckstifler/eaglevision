@@ -6,45 +6,29 @@ body {
 	background-color: #FAFAFA;
 	font: 16px "Oswald", Helvetica, Arial, sans-serif;
 }
-
+/*Navigation*/
 .navbar-default {
 	background-color: #373737;
 	border-color: #373737;
 	border-radius: 0;
 }
-.nav {
-	li {
-		margin-top: 45px;
+
+.navbar-default .navbar-nav li {
+	margin-top: 0px;
+	a:hover {
+		color: $rose;
+	}
+	a:active {
+		color: $rose;
 	}
 }
 div.ligne {
 	border: 2px solid $green;
+	background-color: $green;
 	position: relative;
 	top: -20px;
 }
-// .nav {
-// 	position: absolute;
-// 	right: 10%;
-// 	top: 15px;
-// 	letter-spacing: 3px;
-// 	li span {
-// 		font-weight: 400;
-// 		font-size: 18px;
-// 		a {
-// 			margin: 20px;
-// 			color: $rose;
-// 			text-decoration: none;
-// 		}
-// 		a:hover {
-// 			color: black;
-// 		}
-// 	}
-// }
-.carousel-caption a {
-	position: relative;
-	left: 100px;
-	top: 50px;
-}
+
 /*slider */
 #slider {
 	background:url("../images/main.jpg ");
@@ -55,12 +39,18 @@ div.ligne {
 }
 .carousel-caption {
 	top: 200px;
+	a {
+		position: relative;
+		left: 100px;
+		top: 50px;
+	}
 	i {
 		color: $green;
 		padding: 0 50px;
 	}
 	h1 {
-		letter-spacing: 1px;
+		border-radius: 20px;
+		background: linear-gradient(135deg,$rose, $green);
 	}
 }
 
@@ -79,24 +69,21 @@ div.ligne {
 	margin: 10px;
 }
 
-// .btn-success {
-// 	background-color: rgba(168, 22, 133, 0.9);
-// 	border-color: rgba(168, 22, 133, 0.9);
-// }
-
 /* CONTENT */
 .content {
 	position: relative;
 	top: 20px;
 }
 #informatique {
-	background-color: rgba($rose, 0.1);
+	background: linear-gradient(#FAFAFA, rgba($brown,0.3));
+	//background-color: rgba($brown,0.2);
 	position: relative;
 	top: -40px;
 	padding: 15px 5px 20px 5px;
 }
 #electronique{
-	background-color: #FAFAFA;
+	//background-color: #FAFAFA;
+	background: linear-gradient($brown, #FAFAFA);
 	position: relative;
 	top: -40px;
 	padding: 15px 5px 20px 5px;
@@ -104,9 +91,17 @@ div.ligne {
 }
 h2.title {
 	color: $green;
+	height: 40px;
+	background: linear-gradient(45deg,$rose, $green);
+	border-radius:0 80px 0;
 	text-align: center;
 	font-weight: 600;
-	letter-spacing: 3px;
+	letter-spacing: 2x;
+	text-shadow: 5;
+}
+
+div i.fa {
+	font-size: 25px;
 }
 
 .talk {
@@ -126,10 +121,10 @@ img {
 .footer {
 	background-color: #222;
 	text-align: center;
-	min-width: 100%;
+	max-width: 100%;
 	color: $brown;
 	font-weight: bold;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.3px;
 }
 h4.title {
 	color: $green;
@@ -142,10 +137,78 @@ div.talk {
 .social-media {
 	padding: 10px 0 0 0;
 	a {
-		padding: 0px 40px;
+		padding: 0px 35px;
 		color: $brown;
 	}
 	a:hover {
 		color: $rose;
+	}
+}
+
+p.logo {
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+/* CONTACT PAGE */
+.map {
+	position: relative;
+	top: -20px;
+}
+.page-body {
+	max-width: 100%;
+	padding: 20px 0 40px 0;
+	.col-md-4 {
+		padding: 10px 0 10px 0;
+	}
+	h2 {
+		color: $rose;
+	}
+}
+
+/*MEDIA QUERIES */
+@media (max-width: 412px) {
+.carousel-caption {
+	top: 50px;
+	a {
+		position: relative;
+		top: 20px;
+		left: 5px;
+	}
+	i {
+		color: $green;
+		padding: 50px 20px;
+	}
+	
+	h2.fix {
+		font-size: 24px;
+	}
+
+}
+
+.firstCarousel {
+	padding: 300px 0;
+}
+
+.social-media {
+	a {
+		padding: 0px 20px;
+		color: $brown;
+	}
+}
+
+}
+
+@media (min-width: 992px) {
+	h2.title {
+		position: relative;
+		top: 170px;
+	}
+}
+
+@media (max-width: 992px) {
+	.row div {
+		padding: 5px 0;
+		margin-left: 15px;
 	}
 }
