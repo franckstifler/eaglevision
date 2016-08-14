@@ -1,0 +1,113 @@
+/* VARIABLES */
+body {
+  background-color: #FAFAFA;
+  font: 16px "Oswald", Helvetica, Arial, sans-serif; }
+
+.navbar-default {
+  background-color: #373737;
+  border-color: #373737;
+  border-radius: 0; }
+
+.nav li {
+  margin-top: 45px; }
+
+div.ligne {
+  border: 2px solid #8BC349;
+  position: relative;
+  top: -20px; }
+
+.carousel-caption a {
+  position: relative;
+  left: 100px;
+  top: 50px; }
+
+/*slider */
+#slider {
+  background: url("../images/main.jpg ");
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  top: -20px; }
+
+.carousel-caption {
+  top: 200px; }
+  .carousel-caption i {
+    color: #8BC349;
+    padding: 0 50px; }
+  .carousel-caption h1 {
+    letter-spacing: 1px; }
+
+.firstCarousel {
+  padding: 400px 0; }
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 10px; }
+
+.carousel-indicators .active {
+  background-color: #8BC349;
+  border: 1px solid #8BC349;
+  margin: 10px; }
+
+/* CONTENT */
+.content {
+  position: relative;
+  top: 20px; }
+
+#informatique {
+  background-color: rgba(233, 28, 99, 0.1);
+  position: relative;
+  top: -40px;
+  padding: 15px 5px 20px 5px; }
+
+#electronique {
+  background-color: #FAFAFA;
+  position: relative;
+  top: -40px;
+  padding: 15px 5px 20px 5px;
+  margin: 0; }
+
+h2.title {
+  color: #8BC349;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px; }
+
+.talk {
+  text-align: left;
+  padding: 15px 30px;
+  font-family: "Oswald";
+  font-size: 25px;
+  line-height: 1.8; }
+
+img {
+  border-radius: 50%; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+/*FOOTER */
+.footer {
+  background-color: #222;
+  text-align: center;
+  min-width: 100%;
+  color: #9f9191;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+
+h4.title {
+  color: #8BC349;
+  padding: 20px 0 1px 0; }
+
+div.talk {
+  text-align: center;
+  font-size: 12px; }
+
+.social-media {
+  padding: 10px 0 0 0; }
+  .social-media a {
+    padding: 0px 40px;
+    color: #9f9191; }
+  .social-media a:hover {
+    color: #E91C63; }
