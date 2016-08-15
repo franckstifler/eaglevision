@@ -209,7 +209,14 @@ p.logo {
 		top: 170px;
 	}
 }
-
+//To ajust logo to be responsive
+@media (max-width: 768px) {
+	.navbar-brand img {
+		position: relative;
+		top: -25px;
+	}
+}
+//to ajust social-media icons
 @media (max-width: 992px) {
 	.row div i {
 		padding: 5px 0;
