@@ -2,9 +2,10 @@
 $rose: #E91C63;
 $green: #8BC349;
 $brown: #9f9191;
-body {
+body, html {
 	background-color: #FAFAFA;
 	font: 16px "Oswald", Helvetica, Arial, sans-serif;
+	max-width: 100%;
 }
 /*Navigation*/
 .navbar-default {
@@ -45,7 +46,8 @@ div.ligne {
 		top: 50px;
 	}
 	i {
-		color: $green;
+		color: grey;
+		font-size: 50px;
 		padding: 0 50px;
 	}
 	h1 {
@@ -73,10 +75,18 @@ div.ligne {
 .content {
 	position: relative;
 	top: 20px;
+	max-width: 100%;
+	div i.fa {
+	font-size: 25px;
+	}
+	img {
+		border-radius: 50%
+	}
 }
 #informatique {
 	background: linear-gradient(#FAFAFA, rgba($brown,0.3));
 	//background-color: rgba($brown,0.2);
+	margin:0;
 	position: relative;
 	top: -40px;
 	padding: 15px 5px 20px 5px;
@@ -100,19 +110,14 @@ h2.title {
 	text-shadow: 5;
 }
 
-div i.fa {
-	font-size: 25px;
-}
+
 
 .talk {
 	text-align: left;
 	padding: 15px 30px;
 	font-family: "Oswald";
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1.8;
-}
-img {
-	border-radius: 50%;
 }
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
@@ -199,7 +204,7 @@ p.logo {
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	h2.title {
 		position: relative;
 		top: 170px;
