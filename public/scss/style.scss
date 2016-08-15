@@ -88,14 +88,14 @@ div.ligne {
 	//background-color: rgba($brown,0.2);
 	margin:0;
 	position: relative;
-	top: -40px;
+	top: -20px;
 	padding: 15px 5px 20px 5px;
 }
 #electronique{
 	//background-color: #FAFAFA;
 	background: linear-gradient($brown, #FAFAFA);
 	position: relative;
-	top: -40px;
+	top: -20px;
 	padding: 15px 5px 20px 5px;
 	margin:0;
 }
@@ -161,7 +161,6 @@ p.logo {
 	top: -20px;
 }
 .page-body {
-	max-width: 100%;
 	padding: 20px 0 40px 0;
 	.col-md-4 {
 		padding: 10px 0 10px 0;

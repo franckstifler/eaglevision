@@ -38,7 +38,7 @@ div.ligne {
     left: 100px;
     top: 50px; }
   .carousel-caption i {
-    color: grey;
+    color: #8BC349;
     font-size: 50px;
     padding: 0 50px; }
   .carousel-caption h1 {
@@ -72,13 +72,13 @@ div.ligne {
   background: linear-gradient(#FAFAFA, rgba(159, 145, 145, 0.3));
   margin: 0;
   position: relative;
-  top: -40px;
+  top: -20px;
   padding: 15px 5px 20px 5px; }
 
 #electronique {
   background: linear-gradient(#9f9191, #FAFAFA);
   position: relative;
-  top: -40px;
+  top: -20px;
   padding: 15px 5px 20px 5px;
   margin: 0; }
 
@@ -137,7 +137,6 @@ p.logo {
   top: -20px; }
 
 .page-body {
-  max-width: 100%;
   padding: 20px 0 40px 0; }
   .page-body .col-md-4 {
     padding: 10px 0 10px 0; }

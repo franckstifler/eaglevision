@@ -1,14 +1,14 @@
 extends layout
 block content
 	include ./navigation
-	.row
-		.col-lg-12
-			iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.738308753566!2d11.518673215317104!3d3.8662209494026363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf81bea8cdd9%3A0x7d8eda0db933a8e0!2sEAGLEVISION!5e0!3m2!1sen!2s!4v1471165119827', width='100%', height='550', frameborder='0', style='border:0', allowfullscreen='')
+	div.ligne
+		span
+	iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7383338838927!2d11.518673214759389!3d3.866215597187719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d8eda0db933a8e0!2sEAGLEVISION!5e0!3m2!1sen!2s!4v1471297359107', width='100%', height='500', frameborder='0', style='border:0', allowfullscreen='')
 	.page-body
-		.row
+		.container
 			.col-md-4.text-center
 				h2 Heures
-				p Ouvert 6 jours de la semaine 8h à 20h.
+				p Ouvert 6/7j de Lundi à Samedi de 09h à 18h.
 				p Et le Dimache sous réservation.
 			.col-md-4.text-center
 				h2 Situés
@@ -20,6 +20,7 @@ block content
 					|+237 674 157 020 / 651 279 39
 			.col-md-4.text-center
 				h2 Autres informations
-				p Pour toutes autres information, contactez nous par mail, et sur les réseaux sociaux. Ou appelez notre sécretariat au: +237 60000000
+				p Pour toutes autres information, contactez nous par mail, et sur les réseaux sociaux.
+				p Ou appelez notre sécretariat au: +237 651 279 394
 
 	include ./footer.jade
