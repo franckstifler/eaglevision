@@ -1,15 +1,15 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
-
+var cleanCSS = require('gulp-clean-css');
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['minify-css'], function() {
 
     browserSync.init({
        	proxy: "localhost:3000"
     });
 
-    gulp.watch("public/scss/*.scss", ['sass']);
+    gulp.watch("public/scss/*.scss", ['sass', 'minify-css']);
     gulp.watch("views/*.jade").on('change', browserSync.reload);
 });
 
@@ -19,6 +19,15 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest("public/stylesheets"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('minify-css', ['sass'], function(){
+	return gulp.src('public//stylesheets/style.css')
+		.pipe(cleanCSS({debug: true}, function(details){
+			console.log(details.name + ':'+ details.stats.orginalSize);
+			console.log(details.name + ':'+ details.stats.minifiedSize);
+		}))
+		.pipe(gulp.dest("public"));
 });
 
 gulp.task('default', ['serve']);
