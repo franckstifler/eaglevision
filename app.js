@@ -21,7 +21,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+//we add a expiry header to our files here with maxAge
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: '30d'}));
 
 app.use('/', routes);
 app.use('/contact', contact);
