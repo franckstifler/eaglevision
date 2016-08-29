@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('ul.nav li').on('click', function(evt){
+	$('ul.nav li').on('click', function(){
 		$('ul.nav li.active').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -7,7 +7,7 @@ $(document).ready(function(){
 		duration: 3000
 	});
 	//wow js
-	(() => {
+	(function(){
 		new WOW().init();
 	})();
 	//smooth scroll of the site
