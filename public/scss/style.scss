@@ -221,6 +221,9 @@ p.logo {
 		position: relative;
 		top: -25px;
 	}
+	.navbar-inverse .navbar-nav {
+	padding-top: 0px;
+	}
 }
 //to ajust social-media icons
 @media (max-width: 992px) {
