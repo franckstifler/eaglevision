@@ -19,11 +19,23 @@ body, html {
 }
 .navbar-inverse .navbar-nav li {
 	//dding-top: 30px;
+	color: #fff;
 	a {
 		color: #fff;
 	}
 	a:hover, a:active {
-		color: $rose;
+		color: #fff;
+		background-color: $rose;
+	}
+	.dropdown-menu li {
+		a {
+			color: #444;
+		}
+		a:hover{
+			background-color: $rose;
+			color: #fff;
+		}
+
 	}
 }
 div.ligne {
@@ -68,6 +80,7 @@ div.ligne {
 	border: 1px solid #fff;
 	margin: 10px;
 }
+
 .carousel-indicators .active{
 	background-color: $green;
 	border: 1px solid $green;
@@ -76,6 +89,10 @@ div.ligne {
 .btn-success {
 	background-color: $green ;
 	border-color: $green;
+}
+.btn-success:hover{
+	background-color: $rose ;
+	border-color: $rose;
 }
 
 /* CONTENT */
