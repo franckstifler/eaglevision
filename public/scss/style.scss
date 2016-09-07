@@ -108,7 +108,8 @@ div.ligne {
 	}
 }
 #informatique {
-	background: linear-gradient(#FAFAFA, rgba($brown,0.3));
+	background: #F8F8F8;
+	//background: linear-gradient(#FAFAFA, rgba($brown,0.3));
 	//background-color: rgba($brown,0.2);
 	margin:0;
 	position: relative;
@@ -117,7 +118,8 @@ div.ligne {
 }
 #electronique{
 	//background-color: #FAFAFA;
-	background: linear-gradient($brown, #FAFAFA);
+	//background: linear-gradient($brown, #FAFAFA);
+	background: #FFF;
 	position: relative;
 	top: -20px;
 	padding: 15px 5px 20px 5px;
@@ -126,7 +128,7 @@ div.ligne {
 h2.title {
 	color: $green;
 	height: 40px;
-	background: linear-gradient(45deg,$rose, #8BC);
+	background: linear-gradient(rgba($rose,0.3),rgba($rose,0.9) );
 	border-radius:0 80px 0;
 	text-align: center;
 	font-weight: 600;
